@@ -26,7 +26,7 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
-#include "unity_internals.h"
+//#include "unity_internals.h"
 
  /*-----------------------------------------------------------
  * Application specific definitions.
