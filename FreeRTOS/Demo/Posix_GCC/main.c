@@ -87,6 +87,7 @@
 /*-----------------------------------------------------------*/
 extern void main_blinky( void );
 extern void main_full( void );
+extern void main_user( void );
 static void traceOnEnter( void );
 
 /*
@@ -175,6 +176,11 @@ int main( void )
         {
             console_print( "Starting full demo\n" );
             main_full();
+        }
+    #elif (mainSELECTED_APPLICATION == USER_DEMO )
+        {
+            console_print( "Starting user demo\n" );
+            main_user();
         }
     #else
         {
