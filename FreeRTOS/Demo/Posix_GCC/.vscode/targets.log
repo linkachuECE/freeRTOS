@@ -1,0 +1,1401 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Aug  3 13:42:20 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 8)
+FREERTOS_DIR := /home/linkachu/FreeRTOS/FreeRTOS
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 73)
+CPPFLAGS := -I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include -DBUILD_DIR=\"/home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build\" -D_WINDOWS_ -DTRACE_ON_ENTER=0 -DprojCOVERAGE_TEST=0
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 10)
+FREERTOS_PLUS_DIR_REL := ../../../FreeRTOS-Plus
+# makefile
+CURDIR := /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 2)
+BIN := posix_demo
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /mnt/c/Program Files/Microsoft VS Code/bin/code
+# makefile (from 'Makefile', line 85)
+CFLAGS := -ggdb3 -O3
+# makefile (from 'build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.d', line 1)
+MAKEFILE_LIST :=  Makefile build/main_full.d build/main.d build/console.d build/main_blinky.d build/code_coverage_additions.d build/run-time-stats-utils.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.d build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.d build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.d build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.d build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.d build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.d build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.d
+# makefile (from 'Makefile', line 11)
+FREERTOS_PLUS_DIR := /home/linkachu/FreeRTOS/FreeRTOS-Plus
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/c/Program Files/Microsoft VS Code
+# makefile (from 'Makefile', line 20)
+INCLUDE_DIRS := -I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 107)
+OBJ_FILES = $(SOURCE_FILES:%.c=$(BUILD_DIR)/%.o)
+# environment
+PATH = /home/linkachu/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/home/linkachu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/egbra/AppData/Local/Microsoft/WindowsApps:/snap/bin
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 129)
+GPROF_OPTIONS := --directory-path=-I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-1cb5cdb2-38ee-4a60-98e3-421809f9adc9.sock
+# makefile (from 'Makefile', line 86)
+LDFLAGS := -ggdb3 -pthread -O3
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+PWD = /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/9_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WT_SESSION = 16510616-b88e-4099-9e6d-be424c7a9731
+# makefile (from 'Makefile', line 78)
+SOURCE_FILES := main_full.c main.c console.c main_blinky.c code_coverage_additions.c run-time-stats-utils.c /home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.c /home/linkachu/FreeRTOS/FreeRTOS/Source/queue.c /home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.c /home/linkachu/FreeRTOS/FreeRTOS/Source/list.c /home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.c /home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.c /home/linkachu/FreeRTOS/FreeRTOS/Source/timers.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.c
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/linkachu
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = linkachu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 5)
+BUILD_DIR_ABS := /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 109)
+DEP_FILE = $(OBJ_FILES:%.o=%.d)
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 1)
+CC := gcc
+# makefile (from 'Makefile', line 4)
+BUILD_DIR := ./build
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = linkachu
+# makefile
+.DEFAULT_GOAL := posix_demo
+# environment
+NAME = Code
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/egbra/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+WT_PROFILE_ID = {07b52e3e-de2c-5db4-bd2d-ba144ed6c273}
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 13)
+KERNEL_DIR := /home/linkachu/FreeRTOS/FreeRTOS/Source
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 7)
+FREERTOS_DIR_REL := ../../../FreeRTOS
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=18/353=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 98294): 18 files, no impossibilities.
+# /home/linkachu/FreeRTOS/FreeRTOS/Source (device 2080, inode 60164): 21 files, no impossibilities.
+
+# 39 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile
+#  recipe to execute (from 'Makefile', line 120):
+	-mkdir -p $(@D)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -MMD -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSetPolling.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+run-time-stats-utils.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:50.74442641
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:57.40442653
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:56.034426505
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TaskNotify.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+main_blinky.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.o: /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.014426469
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/main.o: main.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h console.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/AbortDelay.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StaticAllocation.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/run-time-stats-utils.o: run-time-stats-utils.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferInterrupt.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:55.534426496
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/PollQ.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/BlockQ.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/flop.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/dynamic.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSet.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/countsem.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.134426453
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/message_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferDemo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/integer.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueOverwrite.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/main_full.o: main_full.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/BlockQ.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/integer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/semtest.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/PollQ.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/GenQTest.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QPeek.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/recmutex.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/flop.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TimerDemo.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/countsem.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/death.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/dynamic.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSet.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueOverwrite.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/EventGroupsDemo.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/IntSemTest.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TaskNotify.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSetPolling.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StaticAllocation.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/blocktim.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/AbortDelay.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferDemo.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferDemo.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferInterrupt.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferAMP.h console.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.894426467
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/EventGroupsDemo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.904426485
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.784426465
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/AbortDelay.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.o: /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:37:00.124424411
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main_full.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/queue.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.95442645
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.o: /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TimerDemo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferInterrupt.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+posix_demo: build/posix_demo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.244426437
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:55.644426498
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/PollQ.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/BlockQ.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/dynamic.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.684426463
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.554426443
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferDemo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/code_coverage_additions.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.584426389
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/queue.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:50.824426411
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.444426477
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferDemo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/EventGroupsDemo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/death.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.994426487
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:51.954426432
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:56.194426508
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+code_coverage_additions.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.814426483
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.324426438
+#  File has been updated.
+ 
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/IntSemTest.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/message_buffer.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/stack_macros.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/recmutex.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/list.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TimerDemo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:55.794426501
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:50.904426413
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+FreeRTOSConfig.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/message_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferAMP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.40442644
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.234426473
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:55.16442649
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/blocktim.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.54442646
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/croutine.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StreamBufferDemo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.714426482
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.054426452
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/timers.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/posix_demo: build/main_full.o build/main.o build/console.o build/main_blinky.o build/code_coverage_additions.o build/run-time-stats-utils.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	-mkdir -p ${@D}
+	$(CC) $^ ${LDFLAGS} -o $@
+
+# Not a target:
+trcSnapshotConfig.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main_blinky.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.434426386
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/GenQTest.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/death.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.524426478
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/console.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.324426384
+#  File has been updated.
+#  Successfully updated.
+
+build/code_coverage_additions.o: code_coverage_additions.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/message_buffer.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+console.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/croutine.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QPeek.h
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/IntSemTest.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+trcConfig.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/timers.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/recmutex.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/semtest.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:57.444426531
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.384426457
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stack_macros.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/MessageBufferAMP.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.o: /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/stream_buffer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.224426382
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSetPolling.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.704426445
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+profile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 131):
+	gprof -a -p --all-lines $(GPROF_OPTIONS) $(BUILD_DIR)/$(BIN) $(BUILD_DIR)/gmon.out > $(BUILD_DIR)/prof_flat.txt
+	gprof -a --graph $(GPROF_OPTIONS) $(BUILD_DIR)/$(BIN) $(BUILD_DIR)/gmon.out > $(BUILD_DIR)/prof_call_graph.txt
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/run-time-stats-utils.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.66442639
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/blocktim.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/TaskNotify.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/list.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:54.344426475
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:52.824426447
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:51.094426416
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+console.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:53.244426455
+#  File has been updated.
+#  Successfully updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.o: /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/event_groups.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/StaticAllocation.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/GenQTest.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main_full.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:49.034426379
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QPeek.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/flop.h
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueSet.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/countsem.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/main_blinky.o: main_blinky.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/timers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h console.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/integer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.o: /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/QueueOverwrite.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include/semtest.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/console.o: console.c /home/linkachu/FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h FreeRTOSConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcRecorder.h trcConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h trcSnapshotConfig.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcHardwarePort.h /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcKernelPort.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/projdefs.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/portable.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/portmacro.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/semphr.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/queue.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/task.h /home/linkachu/FreeRTOS/FreeRTOS/Source/include/list.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:57.264426528
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 126):
+	-rm -rf $(BUILD_DIR)
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:38:50.124426399
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include/trcPortDefines.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=194/1024=19%, Rehash=0, Collisions=78/1242=6%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 2 (0) / strings = 225 / storage = 12246 B / avg = 54 B
+# current buf: size = 8162 B / used = 4136 B / count = 66 / avg = 62 B
+# other used: total = 8110 B / count = 159 / avg = 51 B
+# other free: total = 52 B / max = 52 B / min = 52 B / avg = 52 B
+
+# strcache performance: lookups = 1188 / hit rate = 81%
+# hash-table stats:
+# Load=225/8192=3%, Rehash=0, Collisions=5/1188=0%
+# Finished Make data base on Wed Aug  3 13:42:20 2022
+
+ 
