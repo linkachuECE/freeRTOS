@@ -1,0 +1,885 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Aug  5 18:59:08 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 8)
+FREERTOS_DIR := /home/linkachu/FreeRTOS/FreeRTOS
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 73)
+CPPFLAGS := -I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include -DBUILD_DIR=\"/home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build\" -D_WINDOWS_ -DTRACE_ON_ENTER=0 -DprojCOVERAGE_TEST=0
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 10)
+FREERTOS_PLUS_DIR_REL := ../../../FreeRTOS-Plus
+# makefile
+CURDIR := /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 2)
+BIN := posix_demo
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /mnt/c/Program Files/Microsoft VS Code/bin/code
+# makefile (from 'Makefile', line 85)
+CFLAGS := -ggdb3 -O3
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from 'Makefile', line 11)
+FREERTOS_PLUS_DIR := /home/linkachu/FreeRTOS/FreeRTOS-Plus
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /mnt/c/Program Files/Microsoft VS Code
+# makefile (from 'Makefile', line 20)
+INCLUDE_DIRS := -I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 107)
+OBJ_FILES = $(SOURCE_FILES:%.c=$(BUILD_DIR)/%.o)
+# environment
+PATH = /home/linkachu/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/home/linkachu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/egbra/AppData/Local/Microsoft/WindowsApps:/snap/bin
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'Makefile', line 129)
+GPROF_OPTIONS := --directory-path=-I. -I/home/linkachu/FreeRTOS/FreeRTOS/Source/include -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix -I/home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils -I/home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/include -I/home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-4c7eb6ad-df72-4864-ae2d-2a2455362e7d.sock
+# makefile (from 'Makefile', line 86)
+LDFLAGS := -ggdb3 -pthread -O3
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+PWD = /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/9_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WT_SESSION = 91acf325-bf89-4f60-922e-3c6d7c8dc271
+# makefile (from 'Makefile', line 78)
+SOURCE_FILES := main_full.c main.c main_user.c console.c main_blinky.c code_coverage_additions.c run-time-stats-utils.c /home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.c /home/linkachu/FreeRTOS/FreeRTOS/Source/queue.c /home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.c /home/linkachu/FreeRTOS/FreeRTOS/Source/list.c /home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.c /home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.c /home/linkachu/FreeRTOS/FreeRTOS/Source/timers.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.c /home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.c /home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.c /home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.c
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/linkachu
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = linkachu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 5)
+BUILD_DIR_ABS := /home/linkachu/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 109)
+DEP_FILE = $(OBJ_FILES:%.o=%.d)
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 1)
+CC := gcc
+# makefile (from 'Makefile', line 4)
+BUILD_DIR := ./build
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = linkachu
+# makefile
+.DEFAULT_GOAL := posix_demo
+# environment
+NAME = Code
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/egbra/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+WT_PROFILE_ID = {07b52e3e-de2c-5db4-bd2d-ba144ed6c273}
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 13)
+KERNEL_DIR := /home/linkachu/FreeRTOS/FreeRTOS/Source
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 7)
+FREERTOS_DIR_REL := ../../../FreeRTOS
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
+# variable set hash-table stats:
+# Load=87/1024=8%, Rehash=0, Collisions=18/263=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 98294): 19 files, no impossibilities.
+# /home/linkachu/FreeRTOS/FreeRTOS/Source (device 2080, inode 60164): 22 files, no impossibilities.
+
+# 41 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile
+#  recipe to execute (from 'Makefile', line 120):
+	-mkdir -p $(@D)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -MMD -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main_blinky.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/run-time-stats-utils.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+ 
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main_full.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-03 13:37:00.124424411
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+posix_demo: build/posix_demo
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/code_coverage_additions.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main_blinky.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.d:
+#  Implicit rule search has been done.
+ 
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/posix_demo: build/main_full.o build/main.o build/main_user.o build/console.o build/main_blinky.o build/code_coverage_additions.o build/run-time-stats-utils.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/queue.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/timers.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.o build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/blocktim.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/death.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/IntSemTest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferAMP.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/recmutex.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferDemo.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StreamBufferInterrupt.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.o build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TimerDemo.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcStreamingRecorder.o build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	-mkdir -p ${@D}
+	$(CC) $^ ${LDFLAGS} -o $@
+
+# Not a target:
+build/main_user.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/GenQTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/port.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/console.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/code_coverage_additions.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 126):
+	-rm -rf $(BUILD_DIR)
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/croutine.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QPeek.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/semtest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/streamports/File/trcStreamingPort.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/EventGroupsDemo.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/tasks.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcKernelPort.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/main.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSetPolling.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/AbortDelay.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/MemMang/heap_3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+profile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 131):
+	gprof -a -p --all-lines $(GPROF_OPTIONS) $(BUILD_DIR)/$(BIN) $(BUILD_DIR)/gmon.out > $(BUILD_DIR)/prof_flat.txt
+	gprof -a --graph $(GPROF_OPTIONS) $(BUILD_DIR)/$(BIN) $(BUILD_DIR)/gmon.out > $(BUILD_DIR)/prof_call_graph.txt
+
+# Not a target:
+build/run-time-stats-utils.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/TaskNotify.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/list.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/PollQ.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/BlockQ.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/event_groups.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/dynamic.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils/wait_for_event.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/StaticAllocation.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/MessageBufferDemo.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build/main_full.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/flop.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueSet.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/countsem.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+build/main_user.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/integer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Demo/Common/Minimal/QueueOverwrite.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/console.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/trcSnapshotRecorder.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+build//home/linkachu/FreeRTOS/FreeRTOS/Source/stream_buffer.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=101/1024=10%, Rehash=0, Collisions=13/207=6%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 143 / storage = 6599 B / avg = 46 B
+# current buf: size = 8162 B / used = 6599 B / count = 143 / avg = 46 B
+
+# strcache performance: lookups = 204 / hit rate = 29%
+# hash-table stats:
+# Load=143/8192=2%, Rehash=0, Collisions=7/204=3%
+# Finished Make data base on Fri Aug  5 18:59:08 2022
+
+ 
