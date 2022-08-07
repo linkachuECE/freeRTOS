@@ -87,7 +87,7 @@
 /*-----------------------------------------------------------*/
 extern void main_blinky( void );
 extern void main_full( void );
-extern void main_user( void );
+extern void main_mine( void );
 static void traceOnEnter( void );
 
 /*
@@ -169,18 +169,13 @@ int main( void )
     console_init();
     #if ( mainSELECTED_APPLICATION == BLINKY_DEMO )
         {
-            console_print( "Starting echo blinky demo\n" );
-            main_blinky();
+            console_print( "Starting my demo\n" );
+            main_mine();
         }
     #elif ( mainSELECTED_APPLICATION == FULL_DEMO )
         {
             console_print( "Starting full demo\n" );
             main_full();
-        }
-    #elif (mainSELECTED_APPLICATION == USER_DEMO )
-        {
-            console_print( "Starting user demo\n" );
-            main_user();
         }
     #else
         {
@@ -226,6 +221,7 @@ void vApplicationIdleHook( void )
     usleep( 15000 );
     traceOnEnter();
 
+
     #if ( mainSELECTED_APPLICATION == FULL_DEMO )
         {
             /* Call the idle task processing used by the full demo.  The simple
@@ -233,7 +229,9 @@ void vApplicationIdleHook( void )
             vFullDemoIdleFunction();
         }
     #endif
+
 }
+
 /*-----------------------------------------------------------*/
 
 void vApplicationStackOverflowHook( TaskHandle_t pxTask,
